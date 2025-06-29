@@ -6,25 +6,32 @@ const randomNumber = Math.floor(Math.random() * 101)
 
 let count = 0;
 
+//Storing list of past guesses
+let pastGuesses = [];
+
 function checkGuess(){
     // Storing player Guess
     const playerGuess = document.querySelector('#guess').value;
 
     if(playerGuess < randomNumber){
         count++;
+        pastGuesses.push(playerGuess);
         document.querySelector('#tooHighOrLow').innerHTML = 'Too low'
     }
 
      else if (playerGuess > randomNumber){
         count++;
+        pastGuesses.push(playerGuess);
         document.querySelector('#tooHighOrLow').innerHTML = 'Too High'
 
     }
 
     else {
         count++;
+        pastGuesses.push(playerGuess);
         document.querySelector('#tooHighOrLow').innerHTML = 'You guessed correctly!'
         document.querySelector('#guesses').innerHTML = `It took you ${count} tries!`
+        document.querySelector('#previousGuesses').innerHTML = `These were your guesses: ${pastGuesses.join(', ')}`
     }
 }
 
