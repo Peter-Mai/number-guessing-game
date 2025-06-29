@@ -1,7 +1,9 @@
 
 document.querySelector('#submit').addEventListener('click', checkGuess )
 
-
+function checkGuess(){
+    const playerGuess = document.querySelector('#guess').value;
+}
 
 // compare two numbers
 
