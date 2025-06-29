@@ -16,6 +16,10 @@ function checkGuess(){
         document.querySelector('#tooHighOrLow').innerHTML = 'Too High'
 
     }
+
+    else {
+        document.querySelector('#tooHighOrLow').innerHTML = 'You guessed correctly!'
+    }
 }
 
 // compare two numbers
