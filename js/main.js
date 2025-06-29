@@ -1,14 +1,14 @@
 
 document.querySelector('#submit').addEventListener('click', checkGuess )
+    
+// Generating a random number between 1 and 100
+const randomNumber = Math.floor(Math.random() * 101)
 
 let count = 0;
 
 function checkGuess(){
     // Storing player Guess
     const playerGuess = document.querySelector('#guess').value;
-
-    // Generating a random number between 1 and 100
-    const randomNumber = Math.floor(Math.random() * 101)
 
     if(playerGuess < randomNumber){
         count++;
