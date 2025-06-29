@@ -7,6 +7,14 @@ function checkGuess(){
 
     // Generating a random number between 1 and 100
     const randomNumber = Math.floor(Math.random() * 101)
+
+    if(playerGuess < randomNumber){
+        document.querySelector('#tooHighOrLow').innerHTML = 'Too low'
+    }
+
+    // else if {
+
+    // }
 }
 
 // compare two numbers
