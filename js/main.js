@@ -24,6 +24,7 @@ function checkGuess(){
     else {
         count++;
         document.querySelector('#tooHighOrLow').innerHTML = 'You guessed correctly!'
+        document.querySelector('#guesses').innerHTML = `It took you ${count} tries!`
     }
 }
 
