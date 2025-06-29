@@ -12,9 +12,10 @@ function checkGuess(){
         document.querySelector('#tooHighOrLow').innerHTML = 'Too low'
     }
 
-    // else if {
+     else if (playerGuess > randomNumber){
+        document.querySelector('#tooHighOrLow').innerHTML = 'Too High'
 
-    // }
+    }
 }
 
 // compare two numbers
