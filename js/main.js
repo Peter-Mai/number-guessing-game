@@ -2,7 +2,11 @@
 document.querySelector('#submit').addEventListener('click', checkGuess )
 
 function checkGuess(){
+    // Storing player Guess
     const playerGuess = document.querySelector('#guess').value;
+
+    // Generating a random number between 1 and 100
+    const randomNumber = Math.floor(Math.random() * 101)
 }
 
 // compare two numbers
