@@ -8,3 +8,15 @@
 button {
     margin: 10px 0px 0px 0px;
 }
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
