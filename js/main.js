@@ -1,5 +1,7 @@
 
 document.querySelector('#submit').addEventListener('click', checkGuess )
+
+document.querySelector('#reset').addEventListener('click', resetGame)
     
 // Generating a random number between 1 and 100
 const randomNumber = Math.floor(Math.random() * 101)
