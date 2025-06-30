@@ -3,20 +3,24 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: 2px solid #d1dae3;
+    height: 50vh;
 }
 
 button {
     margin: 10px 0px 0px 0px;
+    color: #6c91bf;
 }
 
 .green {
-    color: green;
+    color: #a7d7a7;
 }
 
 .red {
-    color: red;
+    color: #f4b6b6;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
 }
