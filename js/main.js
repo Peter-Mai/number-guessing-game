@@ -7,6 +7,10 @@ function resetGame(){
     randomNumber = Math.floor(Math.random() * 101);
     count = 0;
     pastGuesses = [];
+    document.querySelector('#guess').value = '';
+    document.querySelector('#tooHighOrLow').innerHTML = '';
+    document.querySelector('#guesses').innerHTML = '';
+    document.querySelector('#previousGuesses').innerHTML = '';
 }
     
 // Generating a random number between 1 and 100
