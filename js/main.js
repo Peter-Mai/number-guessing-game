@@ -28,12 +28,16 @@ function checkGuess(){
     if(playerGuess < randomNumber){
         count++;
         pastGuesses.push(playerGuess);
+        document.querySelector('#tooHighOrLow').classList.remove('green');
+        document.querySelector('#tooHighOrLow').classList.add('red');
         document.querySelector('#tooHighOrLow').innerHTML = 'Too low'
     }
 
      else if (playerGuess > randomNumber){
         count++;
         pastGuesses.push(playerGuess);
+        document.querySelector('#tooHighOrLow').classList.remove('green');
+        document.querySelector('#tooHighOrLow').classList.add('red');
         document.querySelector('#tooHighOrLow').innerHTML = 'Too High'
 
     }
@@ -41,6 +45,8 @@ function checkGuess(){
     else {
         count++;
         pastGuesses.push(playerGuess);
+        document.querySelector('#tooHighOrLow').classList.remove('red');
+        document.querySelector('#tooHighOrLow').classList.add('green');
         document.querySelector('#tooHighOrLow').innerHTML = 'You guessed correctly!'
         document.querySelector('#guesses').innerHTML = `It took you ${count} tries!`
         document.querySelector('#previousGuesses').innerHTML = `These were your guesses: ${pastGuesses.join(', ')}`
