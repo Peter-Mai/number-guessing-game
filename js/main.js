@@ -5,6 +5,8 @@ document.querySelector('#reset').addEventListener('click', resetGame)
 
 function resetGame(){
     randomNumber = Math.floor(Math.random() * 101);
+    count = 0;
+    pastGuesses = [];
 }
     
 // Generating a random number between 1 and 100
